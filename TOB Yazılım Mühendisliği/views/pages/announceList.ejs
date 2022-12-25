@@ -1,0 +1,49 @@
+<%- include('../parts/header')-%>
+
+    <body>
+        <main>
+            <table class="table"> 
+                <thead>
+                    <tr>
+                        <th class="display-4 nav-text">TAKIM İSMİ</th>
+                        <th class="display-4 nav-text">MAÇ KONUMU</th>
+                        <th class="display-4 nav-text">MAÇ TARİHİ</th>
+                        <th class="display-4 nav-text">POZİSYON</th>
+                        <th class="display-4 nav-text">KATIL</th>
+                        <!-- tr satır th başlık tanımlar -->
+                    </tr>
+                </thead>
+                <!-- <tfoot>
+                    <tr>
+                        <th class="display-4 nav-text">Team Name</th>
+                        <th class="display-4 nav-text">Match Location</th>
+                        <th class="display-4 nav-text">Match Date</th>
+                        <th class="display-4 nav-text">Position</th>
+                        <th class="display-4 nav-text">Join</th>
+                    </tr>
+                </tfoot> -->
+
+                <tbody>
+                    <% for (var i=0; i < announceList.length; i++ ) { %>
+                        <tr>
+                            <td class="display-6 nav-text">
+                                <%= announceList[i].data.teamName %>
+                            </td>
+                            <td class="display-6 nav-text">
+                                <%= announceList[i].data.matchLocation %>
+                            </td>
+                            <td class="display-6 nav-text">
+                                <%= announceList[i].data.matchDate %>
+                            </td>
+                            <td class="display-6 nav-text">
+                                <%= announceList[i].data.position %>
+                            </td>
+                            <td><button type="button" class="btn btn-danger btn-join" onclick="joinAnnounce(<%= i %>)">KATIL</button>
+                            </td>
+                        </tr>
+                        <% } %>
+                        <!--Burdaki döngüde app.jsde announceList arrayi tanımlayıp 
+                        büyüklüğüne göre döngü döndürüyorum. (Maç bilgileri kadar.)  -->
+                </tbody>
+            </table>
+        </main>

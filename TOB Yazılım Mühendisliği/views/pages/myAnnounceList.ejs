@@ -1,0 +1,76 @@
+<%- include('../parts/header')-%>
+    <body>
+        <main>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="display-4 nav-text">MAÇ KONUMU</th>
+                        <th class="display-4 nav-text">MAÇ TARİHİ</th>
+                        <th class="display-4 nav-text">POZİSYON</th>
+                        <th class="display-4 nav-text">SİL</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                        <th class="display-4 nav-text">Match Location</th>
+                        <th class="display-4 nav-text">Match Date</th>
+                        <th class="display-4 nav-text">Position</th>
+                        <th class="display-4 nav-text">Delete</th>
+                    </tr>
+                  </tfoot> -->
+
+                  <tbody>
+                    <% for (var i = 0; i < myAnnounceList.length;  i++ ) { %>
+                        <tr> 
+                            <td class="display-5 nav-text"><%=  myAnnounceList[i].data.matchLocation %> </td>
+                            <td class="display-5 nav-text"><%=  myAnnounceList[i].data.matchDate %> </td>
+                            <td class="display-5 nav-text"><%=  myAnnounceList[i].data.position %> </td> 
+                            <td><button  type="button"  class="btn btn-danger button-delete" onclick="deleteAnnounce(<%= i %>)">SİL</button></td>
+                        </tr>
+                      <% } %>    
+                  </tbody>
+            </table>
+            <button type="button" class="btn btn-success button-new-announce" onclick="routeAnnounce()">YENİ İLAN</button>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="display-4 nav-text">MAÇ KONUMU</th>
+                        <th class="display-4 nav-text">MAÇ TARİHİ</th>
+                        <th class="display-4 nav-text">POZİSYON</th>
+                        <th class="display-4 nav-text">OYUNCU İSMİ</th>
+                        <th class="display-4 nav-text">OYUNCU KİLOSU</th>
+                        <th class="display-4 nav-text">OYUNCU BOYU</th>
+                        <th class="display-4 nav-text">TELEFON NO</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                        <th class="display-4 nav-text">Match Location</th>
+                        <th class="display-4 nav-text">Match Date</th>
+                        <th class="display-4 nav-text">Position</th>
+
+                        <th class="display-4 nav-text">Player Name</th>
+                        <th class="display-4 nav-text">Player Weight</th>
+                        <th class="display-4 nav-text">Player Height</th>
+                        <th class="display-4 nav-text">Phone Number</th>
+                    </tr>
+                  </tfoot> -->
+
+                  <tbody>
+                    <% for (var i = 0; i < myAnnounceList.length;  i++ ) { %>
+                        <% for (var j = 0; j < myAnnounceList[i].data.submittion.length;  j++ ) { %>
+                            <tr> 
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.matchLocation %> </td>
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.matchDate %> </td>
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.position %> </td> 
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.submittion[j].playerName %> </td>
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.submittion[j].playerWeight %> </td>
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.submittion[j].playerHeight %> </td>
+                                <td class="display-6 nav-text"><%=  myAnnounceList[i].data.submittion[j].playerPhoneNumber %> </td>
+                            </tr>
+                        <% } %>    
+                      <% } %>    
+                  </tbody>
+            </table>
+        </main>

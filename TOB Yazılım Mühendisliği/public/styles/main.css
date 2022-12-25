@@ -1,0 +1,423 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-stats{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 12px;
+    color: white;
+
+}
+.nav-text{ 
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+
+.navbar-stats:hover{
+    color: red;
+}
+
+
+* #contact h2{
+    font-size: 4.8rem;
+    color: #2c3e50;
+
+}
+
+#contact-form{
+    width: 70½;
+    margin: 0 auto;
+    text-align: left;
+}
+.text-uppercase {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.form-group{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 1.8rem;
+}
+.form-group input:focus{
+    outline: 0;
+}
+
+.form-group textarea:focus{
+    outline: 0;
+}
+.btn{
+    margin-top: 2rem;
+    width: 300px;
+    height: 60px;
+    font-weight: 400px;
+    display: inline-block;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-left: 38%;
+   
+}
+.col{
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+
+
+
+body{
+    background-color: yellow;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.icon-1{
+    border-radius: 100px;
+    border: 1px solid gray;
+}
+
+.icon-left{
+    float: left;
+    height: 675px;
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid black;
+}
+
+.icon-right{
+    float: right;
+    height: 675px;
+    width: 490px;
+    border: 0px solid black;
+
+}
+
+.navbar-stats{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 12px;
+    color: white;
+
+}
+
+.first-container{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.navbar-stats:hover{
+    color: red;
+}
+
+.container1-text{
+    margin-top:150px;
+}
+
+.container-findings{
+    height: auto;
+    background-color: black;
+    display:inline-block;
+    position: relative;
+    padding-top: 13px;
+}
+.findings-links-player{
+    text-decoration: none;
+    color: white;
+    margin-left: 35%;
+    
+}
+.findings-links-team{
+    text-decoration: none;
+    color: white;
+    margin-left: 35%;
+    
+}
+.findings-links-player:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.findings-links-team:hover{
+    text-decoration: none;
+    color: red;
+}
+.finding-player{
+    float: left;
+}
+.finding-team{
+    float: right;
+}
+.img-findings{
+    width: 900px;
+    height: 600px;
+    margin: 16px;
+    border: 1px solid yellow;
+}
+
+.contact {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    width: 100%;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+footer ul{
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+footer{
+    background-color: yellow;
+    color: #fff;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+footer h4{
+    font-size: 40px;
+    padding-top: 15px;
+    color: black;
+    text-align: center;
+}
+
+footer li p{
+    font-size: 20px;
+   
+     
+}
+
+footer li{
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+footer li h3{
+    color: black;
+}
+
+footer li p{
+    color: black;
+}
+
+.contact .copyright{
+    background-color: black;
+    margin-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright small{
+    font-size: 18px;
+}
+
+.contact{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h4{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.contact li{
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+.btn{
+    align-items: center;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 25px;
+}
+
+.btn-social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.btn-outline{
+    color: #fff;
+    border-color: black;
+    background-color: transparent;
+
+}   
+
+.btn-outline:hover{
+    background-color: black;
+    color: white;
+}
+
+.form-select{
+    margin-top: 0px;
+    text-align: center;
+    color: red;
+    height: auto;
+    align-items: center;
+}
+.createButton{
+    text-align: center;
+    width: 25%;
+    align-items: center;
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 1.7rem;
+    border-radius: 1.2rem;
+    border: 1px solid yellow;
+}
+.select-position{
+    font-size: 1.6rem;
+    width: 12%;
+    display: inline-block;
+    border-radius: 1.2rem;
+    border: 1px solid red;
+    
+}
+.containerAnnounce{
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 17rem;
+    padding: 5rem;
+}
+
+.button-new-announce{
+    font-size: 2rem;
+    align-items: center;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.button-delete{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    width: 10rem;
+    align-items: center;
+
+}
+
+.text-announce{
+    margin-top: 5rem;
+    padding-top: 3rem;
+}
+
+.signup-container{
+    margin-left: 7rem;
+    margin-top: 6rem;
+}
+.signup-container .btn{
+    margin-right: 30rem;
+    border: 2px solid red;
+    background-color: red;
+    margin-top: 0.001rem;
+    font-size: 2rem;
+
+}
+
+.signup-container .form-group{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-container{
+    margin-left: 7rem;
+    margin-top: 7rem;
+}
+.login-container .btn{
+    margin-right: 30rem;
+    border: 2px solid red;
+    background-color: red;
+    margin-top: 0.001rem;
+    font-size: 2rem;
+}
+
+.login-container .form-group{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.error-page{
+    margin-top: 17rem;
+}
+
+.btn-join{
+    margin-top: 0.1rem;
+    font-size: 2rem;
+    width: 7rem;
+    margin-right: 0.5rem;
+}
+
+.btn-appointment{
+    display: inline-block;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    font-size: 2rem;
+}
+
+.container-footer{
+    padding-top: 0.1rem;
+}
+.container-footer a{
+    margin: 0.1rem;
+    padding-top: 0.001rem;
+    margin-left: 1rem;
+    margin-right: 2.4rem;
+    margin-bottom: 0rem;
+}

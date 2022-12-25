@@ -1,0 +1,45 @@
+<%- include('../parts/header')-%>
+    <body>
+        <main>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="display-4 nav-text">TAKIM İSMİ</th>
+                        <th class="display-4 nav-text">MAÇ KONUMU</th>
+                        <th class="display-4 nav-text">MAÇ TARİHİ</th>
+                        <th class="display-4 nav-text">POZİSYON</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <tr> 
+                            <td class="display-6 nav-text"><%=joinAnnounceFor.data.teamName %> </td>
+                            <td class="display-6 nav-text"><%=joinAnnounceFor.data.matchLocation %> </td>
+                            <td class="display-6 nav-text"><%=joinAnnounceFor.data.matchDate %> </td>
+                            <td class="display-6 nav-text"><%=joinAnnounceFor.data.position %> </td> 
+                        </tr> 
+                  </tbody>
+            </table>
+            <section id="contact">
+                <div class="container">
+                    <h2 class="text-uppercase">
+                        Başvur 
+                    </h2>
+                    <form id="joinAnnounce" action="joinAnnounce" method="post">
+                        <div class="form-group">
+                            <input type="text" name="playerName" placeholder="OYUNCU İSMİ">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="playerWeight" placeholder="OYUNCU KİLOSU">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="playerHeight" placeholder="OYUNCU BOYU">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="playerPhoneNumber" placeholder="TELEFON NUMARASI">
+                        </div>
+                        <button style="justify-content: center;" class="btn btn-danger btn-large btn-appointment">BAŞVUR</button>
+                    </form>
+                </div>
+            </section>
+            </div>
+        </main>

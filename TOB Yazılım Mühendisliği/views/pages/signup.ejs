@@ -1,0 +1,46 @@
+<%- include('../parts/header')-%>
+    <body>
+        <main>
+            <section id="contact">
+                <div class="container signup-container">
+                    <h2 class="text-uppercase">Üye Ol</h2>
+                    <form id="signup" action="signup" method="post">
+                        <div class="form-group">
+                            <input type="text" name="teamName" placeholder="Takım İsmİ">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phoneNumber" placeholder="Telefon Numarası">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="eMail" placeholder="E Mail" >
+                        </div>
+                        <button style="justify-content: center;" class="btn btn-primary btn-large">ÜYE OL</button>
+                    </form>
+                </div>
+            </section>
+            </div>
+        </main>
+
+
+
+
+        <select id="takim">
+            <option value="1">Galatasaray</option>
+            </select>
+             
+            <script>
+             
+            var takimListe=document.getElementById("takim");
+             
+            var takim= document.createElement("option");
+            takim.setAttribute("value","2");
+            takim.innerHTML="Beşiktaş";
+            takimListe.appendChild(takim);
+             
+            </script>
+
+
+
+
+
+
